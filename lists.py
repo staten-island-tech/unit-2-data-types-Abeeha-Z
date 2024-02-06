@@ -1,4 +1,5 @@
-#print how many words there are
-message = "hello how are you"
-words = message.split( )
-print(len(words)) 
+""" x = (int(input("Is it even or odd?")))
+if (x%2) > 0:
+    print("odd")
+else:
+    print("even") """

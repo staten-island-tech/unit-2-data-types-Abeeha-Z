@@ -18,13 +18,26 @@ if service == "great":
     print(y + (y%25)) """
 
 
-def allfactors(n):
+""" def allfactors(n):
     factors = []
     for i in range(1,n+1):
         if n%i == 0:
             factors.append(i)
-        return factors
+    return factors
 number = int(input("Please enter a number: "))
 listfactors = allfactors(number)
 print(listfactors)
+ """
 
+x = int(input("what is the first number? "))
+y = int(input("What is the second number? "))
+def gcf(x,y):
+    if x > y:
+        x= y
+    else:
+        x= x
+        for i in range(1,x+1):
+            if x%i:
+                gcf = i
+                gcf.append(i)
+            return gcf

@@ -29,15 +29,15 @@ listfactors = allfactors(number)
 print(listfactors)
  """
 
-x = int(input("what is the first number? "))
-y = int(input("What is the second number? "))
-def gcf(x,y):
-    if x > y:
-        x= y
+numx = int(input("what is the first number? "))
+numy = int(input("What is the second number? "))
+def gcf(numx,numy):
+    if numx > numy:
+        x= numy
     else:
-        x= x
+        x= numx
         for i in range(1,x+1):
-            if x%i:
-                gcf = i
-                gcf.append(i)
-            return gcf
+            if numx%i == 0 and numy%i == 0:
+                hcf = i
+        return hcf
+print(gcf(numx,numy))
